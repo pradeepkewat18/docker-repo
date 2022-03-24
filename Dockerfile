@@ -1,4 +1,4 @@
-FROM docker.io/centos:centos7
+FROM quay.io/kushalsamota/centos
 RUN  yum install httpd -y
 COPY ./index.html   /var/www/html
 CMD  ["/usr/sbin/httpd","-D","FOREGROUND"]
